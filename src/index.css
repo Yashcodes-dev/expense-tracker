@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+*{
+ font-family: "McLaren", sans-serif;
+  font-style: normal;
+}
+
+body{
+  background-color: #EFE9E3 ;
+}
