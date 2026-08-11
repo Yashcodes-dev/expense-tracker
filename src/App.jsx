@@ -4,6 +4,10 @@ import { BrowserRouter, Routes , Route } from 'react-router'
 import Landingpage from './Pages/Landingpage'
 import Loginpage from './Pages/Loginpage'
 import Dashboard from './Pages/Dashboard'
+import Budget from './Pages/Budget'
+import Notfound from './Pages/Notfound'
+import Expenses from './Pages/Expenses'
+import DashHome from './Pages/DashHome'
 const App = () => {
   return (
     <div>
@@ -11,9 +15,20 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Landingpage/>}/>
         <Route path='/login' element={<Loginpage/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
+        
+       <Route path="/dashboard" element={<Dashboard />}>
 
+          <Route path="dashome" element={<DashHome />} />  
+          <Route path="budget" element={<Budget />} />  
+
+      <Route path="expenses" element={<Expenses />} />
+
+  </Route>
+
+
+              <Route path='*' element={<Notfound/>}  />
       </Routes>
+
     </div>
   )
 }
