@@ -9,7 +9,7 @@ const Navbar =   () => {
       </div>
       <div className='flex gap-3'>
         <NavLink
-        to={'/dashboard'}
+        to='/dashboard/dashome'
         className=' rounded-lg text-[#14100c] px-3 py-2 outline-none flex justify-center items-center border-gray-200 border-1 cursor-pointer h-10 text-sm hover:bg-gray-100 transition-all duration-300 ease-in-out active:scale-95'>Dashboard</NavLink>
 
         <NavLink
