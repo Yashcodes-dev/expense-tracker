@@ -8,6 +8,7 @@ import Budget from './Pages/Budget'
 import Notfound from './Pages/Notfound'
 import Expenses from './Pages/Expenses'
 import DashHome from './Pages/DashHome'
+import Upgrade from './Pages/Upgrade'
 const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="budget" element={<Budget />} />  
 
       <Route path="expenses" element={<Expenses />} />
+      <Route path="upgrade" element={<Upgrade />} />
 
   </Route>
 

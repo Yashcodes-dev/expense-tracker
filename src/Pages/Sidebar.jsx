@@ -25,6 +25,11 @@ const Sidebar = () => {
         to='expenses'
          className= {({isActive})=> ` px-10 py-7 w-full items-center justify-center flex text-[#14100c] hover:text-[#efe9e3]  hover:cursor-pointer rounded-2xl hover:bg-[#14100c] active:opacity-50 transition-all duration-300 ease-in-out active:scale-97 ${isActive ? "text-lg text-[#e26d3a]": ""}`
          }>Expenses</NavLink>
+
+        <NavLink 
+        to='upgrade'
+         className= {({isActive})=> ` px-10 py-7 w-full items-center justify-center flex text-[#14100c] hover:text-[#efe9e3]  hover:cursor-pointer rounded-2xl hover:bg-[#14100c] active:opacity-50 transition-all duration-300 ease-in-out active:scale-97 ${isActive ? "text-lg text-[#e26d3a]": ""}`
+         }>Upgrade</NavLink>
       </nav>
 
 
